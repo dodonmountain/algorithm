@@ -8,6 +8,7 @@ for t_case in range(T):
     lst = list(range(N))
     syn = []
     B = []
+    C = []
     for _ in range(N):
         syn.append(list(map(int, input().split())))
     for i in range(1 << N):
@@ -17,13 +18,18 @@ for t_case in range(T):
                 A.append(lst[j])
         if len(A) == 2:
             B.append(A)
-    print(B)
-    for i in range(N):
-        for j in range(N):
-            if i == j:
-                continue
-            else:
-                print('S{}{} : {}'.format(i+1,j+1,syn[i][j] + syn[j][i]))
+    for i in range(len(B)):
+        a, b = B[i][0], B[i][1]
+        C.append(syn[a][b] + syn[b][a])
+    C.sort()
+    tmp = 9876543211
+    for num in range(len(C)-1):
+        if abs(C[num] - C[num+1]) <= tmp:
+            tmp = C[num] - C[num+1]
+    print(C)
+    print(abs(tmp))
+
+
 
 
 
