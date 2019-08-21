@@ -1,4 +1,7 @@
 import itertools
-n = 9
-lst = [1,2,4]
-print(list(itertools.product(lst, repeat=4)))
+
+lst = (1,2,4)
+res = ()
+for i in range(9):
+    res += tuple(itertools.product(lst, repeat=i))
+print(list(map(''.join, res[5])))
