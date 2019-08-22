@@ -22,18 +22,3 @@ for t_case in range(T):
 
 
 
-
-
-'''
-    # 주어진 최대 넓이 20을 N으로 나눈수가 넓이가 20인 종이를 사용 할 수 있는 최대치
-    for i in range(int(N / 20)): # range(1.5 - > 1)
-        widthChoice = 2**(i+1) #2, 4, 8, 16, 32, 64, 128, 256,...
-        totalBar = int(N/10 - (i+1)) # 3 - 1 = 2 
-        width20bar = i+1 # 1 
-        width10bar = int(N/10 - 2*(i+1)) # 3 - 2 = 1
-        lineUp = math.factorial(totalBar)/(math.factorial(width20bar)*math.factorial(width10bar)) # 2! / 1! * 1!
-        res += int(widthChoice*lineUp) # 경우의 수 * 쌓인 방향 = 2 * 2 = 4
-
-    res += 1
-    print('#{} {}'.format(t_case + 1, res))
-'''
