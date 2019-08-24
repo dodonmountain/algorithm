@@ -1,92 +1,44 @@
 import sys
-sys.stdin = open("input.txt")
-from pprint import pprint
-T = 1
 
+sys.stdin = open("input.txt")
+"""
+    lines[2*i+1] =>  도착 노드 (홀수)
+    lines[2*i] =>  출발 노드 (짝수)
+    터미널 노드부터 간선을 지워나간다
+    간선의 도착점에 위치한 노드는 터미널 노드가 아니고 시작점이 될 수 없다.
+    => 시작점이 될 수 없는 노드를 리스트에 저장 => visited []
+    => 시작점이 될 수 있는 노드라면
+        => 방문 예정 리스트에 저장
+            => 만약 방문 예정리스트중에 결과에 없는 노드가 있으면
+                => 결과에 저장
+    => 전체 간선 리스트에서 방문 예정 리스트의 간선 정보를 pop
+    => 연결점이 없는 노드를 결과에 추가
+"""
+T = 3
 for t_case in range(T):
     V, E = map(int, input().split())
     lines = list(map(int, input().split()))
-    graph = { x:[] for x in range(1, V + 1)}
-    graph2 = { x:[] for x in range(1, V + 1)}
-
-
-    for i in range(len(lines)):
-        if i % 2:
-            graph[lines[i-1]] += [lines[i]]
-            graph2[lines[i]] += [lines[i-1]]
-
-    def dfs(start, graph):
-        visited = []
-        covered = []
-        q = []
-        q.append(start)
-        while q:
-            for nods in graph[q.pop()]:
-                if nods not in visited and nods not in covered: # 발견도 방문도 안 한 경우 발견목록에 추가
-                    covered.append(nods)
-            for i in range(len(covered)):
-                if graph2[covered[i]] == []:
-                    visited.append(covered[i]) # 방문
-                else:
-                    q.append(graph2[covered[i]].pop()) # 큐에다가 조사 행렬 넣고 기다려보기         
-        return visited
-    
-    startlist = []
-    # for i in graph2.items():
-    #     if i[1] == []:
-    #         startlist.append(i[0])
-    # startlist.sort()
-    # result = []
-    # for task in startlist:
-    #     result.append(dfs(task, graph))
-    # result.sort()
-    print("#{} {}".format(t_case+1 , ' '.join(map(str, dfs(138, graph)))))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# for t_case in range(T):
-#     V, E = map(int, input().split())
-#     lines = list(map(int, input().split()))
-#     graph = { x:[] for x in range(1, V + 1)}
-#     graph2 = { x:[] for x in range(1, V + 1)}
-#     vs = []
-    # for i in range(len(lines)):
-    #     if i % 2:
-    #         graph[lines[i-1]] += [lines[i]]
-    #         vs.append(lines[i])
-    #         graph[lines[i-1]]
-#     for i in range(len(lines)):
-#         if i % 2:
-#             graph2[lines[i]] += [lines[i-1]]
-
-#     visited, stack = [], []
-#     for k in startlist:
-#         stack.append(k)
-#         while stack:
-#             here = stack.pop()
-#             if here not in visited:
-#                 if graph2[here] != []:
-#                     for i in range(1, len(graph2[here])+1):
-#                         if graph2[i] in visited:
-#                             graph2.pop(i)
-#                     print('graph2',graph2, here)
-#                     stack.extend(graph2[here])
-#                 else:
-#                     visited.append(here)
-#                     stack.extend(graph[here])
-#     print("#{} {}".format(t_case+1, ' '.join(map(str, visited))))
-        
-
+    result = []
+    #  도착 노드를 모두 방문 기록한다.
+    while lines:
+        visited = [-1] * (V + 1) # -1 미방문
+        check = []
+        for i in range(len(lines) // 2):
+            visited[lines[2 * i + 1]] = 1  # 1 방문
+        for j in range(1, len(visited)):
+            if visited[j] == -1:
+                check.append(j)
+                if j not in result:
+                    result.append(j)
+        # 앞에서 부터 뽑으면 인덱스 에러 발생
+        # 뒤에서 부터 순회하면서 뽑으면 안락
+        check.sort()
+        for k in range(len(lines)-1,-1,-1):
+            if k % 2 == 0:
+                if lines[k] in check:
+                    lines.pop(k)
+                    lines.pop(k)
+    for l in range(1, V+1):
+        if l not in result:
+            result.append(l)
+    print("#{} {}".format(t_case+1, ' '.join(map(str, result))))
