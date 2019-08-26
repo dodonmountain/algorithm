@@ -32,7 +32,6 @@ for t_case in range(T):
                     result.append(j)
         # 앞에서 부터 뽑으면 인덱스 에러 발생
         # 뒤에서 부터 순회하면서 뽑으면 안락
-        check.sort()
         for k in range(len(lines)-1,-1,-1):
             if k % 2 == 0:
                 if lines[k] in check:
