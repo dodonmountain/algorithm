@@ -4,6 +4,9 @@ from pprint import pprint
 from collections import deque
 
 
+from collections import deque
+
+
 def bfs(x, y):
     global shortest
     Q = deque()
@@ -22,6 +25,7 @@ def bfs(x, y):
                 continue
             if maze[nx][ny] == 3:
                 shortest = D[xx][yy]
+                return
             if maze[nx][ny] == 0 and visit[nx][ny] == False:
                 visit[nx][ny] = 1  # 방문표시
                 D[nx][ny] = D[xx][yy] + 1
@@ -45,7 +49,8 @@ for t_case in range(T):
             elif maze[i][j] == 3:
                 goal = [i, j]
     bfs(start[0], start[1])
-    # pprint(visit,width=40)
+    pprint(visit,width=40)
     print('#{} {}'.format(t_case + 1, shortest))
+
 
 
