@@ -34,6 +34,7 @@ for t_case in range(T):
             downright = N - 1 - x
         #check down
         if y < N - 1:
+            print()
             for i in range(1, N-1-y):
                 if board[y+i][x] != color and board[y+i][x] !=0:
                     stack.append(i)
