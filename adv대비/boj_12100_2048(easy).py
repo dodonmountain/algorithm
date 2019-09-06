@@ -1,7 +1,8 @@
 import sys
-sys.stdin = open('6109.txt')
+sys.stdin = open('12100.txt')
 from pprint import pprint
-
+from itertools import product as pd
+from copy import  deepcopy
 def rotate(a):
     n = len(a)
     copy = [[0] * n for _ in range(n)]
@@ -23,38 +24,54 @@ def add(a):
                 a[i].pop(j-1)
                 a[i].insert(0,0)
 
+def mymax(a):
+    mxtmp = 0
+    for i in range(N):
+        if mxtmp < max(a[i]):
+            mxtmp = max(a[i])
+    return mxtmp
+
+def solve(S, board):
+    if S == 1:
+        board = rotate(board)
+        push(board)
+        add(board)
+        board = rotate(board)
+        board = rotate(board)
+        board = rotate(board)
+    elif S == 2:
+        board = rotate(board)
+        board = rotate(board)
+        board = rotate(board)
+        push(board)
+        add(board)
+        board = rotate(board)
+    elif S == 3:
+        board = rotate(board)
+        board = rotate(board)
+        push(board)
+        add(board)
+        board = rotate(board)
+        board = rotate(board)
+    else:
+        push(board)
+        add(board)
+    return board
+
+
+
 
 # 1,u 2,d,3,l
 N = int(input())
 board = []
 tmp = []
-
 for i in range(N):
     board.append(list(map(int, input().split())))
-if S == 1:
-    board = rotate(board)
-    push(board)
-    add(board)
-    board = rotate(board)
-    board = rotate(board)
-    board = rotate(board)
-elif S == 2:
-    board = rotate(board)
-    board = rotate(board)
-    board = rotate(board)
-    push(board)
-    add(board)
-    board = rotate(board)
-elif S == 3:
-    board = rotate(board)
-    board = rotate(board)
-    push(board)
-    add(board)
-    board = rotate(board)
-    board = rotate(board)
-else:
-    push(board)
-    add(board)
-print('#{}'.format(t_case+1))
-for i in range(N):
-    print(*board[i])
+# pprint(new_board,width=100)
+for i in list(pd([1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4])):
+    new_board = deepcopy(board)
+    for j in range(5):
+        new_board = solve(i[j],new_board)
+    tmp.append(mymax(new_board))
+
+print(max(tmp))
