@@ -1,9 +1,11 @@
 import sys
-sys.stdin = open('2806.txt')
+# sys.stdin = open('2806.txt')
 
 
 T = int(input())
 def back(b,c,all):
+    if b == c:
+        return
     if c > 1:
         if abs(b[-1] - b[-2]) == 1:
             return

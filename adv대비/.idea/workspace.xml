@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688a8181-4fe5-4b91-8384-6f7a05e85889" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/12100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/12100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boj_12100_2048(easy).py" beforeDir="false" afterPath="$PROJECT_DIR$/boj_12100_2048(easy).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swea_2806_nqueen_backtrack.py" beforeDir="false" afterPath="$PROJECT_DIR$/swea_2806_nqueen_backtrack.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,36 +19,36 @@
     <session id="2121035040">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="5" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.2" value="6" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="30" />
-          <entry key="txt" value="19" />
+          <entry key="py" value="36" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="29" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="35" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="28431" />
+          <entry key="py" value="31017" />
           <entry key="txt" value="621" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="621" />
-          <entry key="Python" value="28431" />
+          <entry key="Python" value="31017" />
         </counts>
       </usages-collector>
     </session>
@@ -55,37 +56,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boj_14501_퇴사.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <marker date="1567729015392" expanded="true" signature="65:166" ph="..." />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/파이프옮기기.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swea_6109_2048.py">
+        <entry file="file://$PROJECT_DIR$/연구소.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="53" column="19" lean-forward="true" selection-end-line="63" />
-              <folding>
-                <marker date="1567730262664" expanded="true" signature="404:592" ph="..." />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boj_12100_2048(easy).py">
+        <entry file="file://$PROJECT_DIR$/낙서장.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/연구소.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-              <folding>
-                <marker date="1567735712252" expanded="true" signature="785:1382" ph="..." />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -161,7 +154,6 @@
         <option value="$PROJECT_DIR$/swea_4615_오셀로.py" />
         <option value="$PROJECT_DIR$/2806.txt" />
         <option value="$PROJECT_DIR$/swea_2806_nqueen.py" />
-        <option value="$PROJECT_DIR$/n_queen_perm.py" />
         <option value="$PROJECT_DIR$/1987.txt" />
         <option value="$PROJECT_DIR$/boj_1987_알파벳.py" />
         <option value="$PROJECT_DIR$/17144.txt" />
@@ -175,11 +167,19 @@
         <option value="$PROJECT_DIR$/swea_6109_2048.py" />
         <option value="$PROJECT_DIR$/12100.txt" />
         <option value="$PROJECT_DIR$/boj_12100_2048(easy).py" />
+        <option value="$PROJECT_DIR$/파이프옮기기.py" />
+        <option value="$PROJECT_DIR$/그대로출력하기.py" />
+        <option value="$PROJECT_DIR$/n_queen_perm.py" />
+        <option value="$PROJECT_DIR$/swea_2806_nqueen_backtrack.py" />
+        <option value="$PROJECT_DIR$/연구소.txt" />
+        <option value="$PROJECT_DIR$/연구소.py" />
+        <option value="$PROJECT_DIR$/낙서장.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="644" />
+    <option name="y" value="82" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -194,7 +194,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/student/Desktop/Linus/알고리즘/adv대비/12100.txt" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/6109.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/swea_2806_nqueen_backtrack.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -214,8 +214,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.boj_12100_2048(easy)">
-    <configuration name="boj_12100_2048(easy)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.낙서장">
+    <configuration name="그대로출력하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="adv대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -227,7 +227,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boj_12100_2048(easy).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그대로출력하기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,7 +236,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="boj_13458_시험감독" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="연구소" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="adv대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,7 +248,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boj_13458_시험감독.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/연구소.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,7 +257,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="boj_14501_퇴사" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="낙서장" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="adv대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,7 +269,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boj_14501_퇴사.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/낙서장.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,7 +278,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="boj_5373_큐빙" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="n_queen_perm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="adv대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,7 +290,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boj_5373_큐빙.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/n_queen_perm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,7 +299,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swea_6109_2048" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="swea_2806_nqueen_backtrack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="adv대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -311,7 +311,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea_6109_2048.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea_2806_nqueen_backtrack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,19 +321,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.boj_5373_큐빙" />
-      <item itemvalue="Python.boj_13458_시험감독" />
-      <item itemvalue="Python.boj_14501_퇴사" />
-      <item itemvalue="Python.swea_6109_2048" />
-      <item itemvalue="Python.boj_12100_2048(easy)" />
+      <item itemvalue="Python.그대로출력하기" />
+      <item itemvalue="Python.연구소" />
+      <item itemvalue="Python.swea_2806_nqueen_backtrack" />
+      <item itemvalue="Python.n_queen_perm" />
+      <item itemvalue="Python.낙서장" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.boj_12100_2048(easy)" />
-        <item itemvalue="Python.swea_6109_2048" />
-        <item itemvalue="Python.boj_14501_퇴사" />
-        <item itemvalue="Python.boj_13458_시험감독" />
-        <item itemvalue="Python.boj_5373_큐빙" />
+        <item itemvalue="Python.낙서장" />
+        <item itemvalue="Python.swea_2806_nqueen_backtrack" />
+        <item itemvalue="Python.n_queen_perm" />
+        <item itemvalue="Python.그대로출력하기" />
+        <item itemvalue="Python.연구소" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +351,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="644" y="82" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.32982087" />
@@ -359,8 +359,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44299674" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4473684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39692983" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -551,13 +551,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swea_2806_nqueen.py" />
-    <entry file="file://$PROJECT_DIR$/n_queen_perm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boj_15686_치킨배달.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -628,36 +621,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/14501.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swea_6109_2048.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="53" column="19" lean-forward="true" selection-end-line="63" />
-          <folding>
-            <marker date="1567730262664" expanded="true" signature="404:592" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6109.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boj_14501_퇴사.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <marker date="1567729015392" expanded="true" signature="65:166" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swea_6109_2048.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="53" column="19" selection-end-line="63" />
+          <folding>
+            <marker date="1567730262664" expanded="true" signature="404:592" ph="..." />
           </folding>
         </state>
       </provider>
@@ -669,15 +648,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/6109.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14501.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boj_12100_2048(easy).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="361">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <marker date="1567735712252" expanded="true" signature="785:1382" ph="..." />
+            <marker date="1567736022135" expanded="true" signature="785:1382" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/파이프옮기기.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/그대로출력하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n_queen_perm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swea_2806_nqueen_backtrack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연구소.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/연구소.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/낙서장.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

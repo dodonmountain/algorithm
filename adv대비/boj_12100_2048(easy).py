@@ -68,9 +68,9 @@ tmp = []
 for i in range(N):
     board.append(list(map(int, input().split())))
 # pprint(new_board,width=100)
-for i in list(pd([1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4])):
+for i in list(pd([1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4])):
     new_board = deepcopy(board)
-    for j in range(5):
+    for j in range(10):
         new_board = solve(i[j],new_board)
     tmp.append(mymax(new_board))
 
