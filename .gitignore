@@ -200,7 +200,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+mistake/
 # Spyder project settings
 .spyderproject
 .spyproject
