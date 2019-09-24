@@ -1,11 +1,7 @@
-import sys
-# sys.stdin = open('2806.txt')
-
-
-T = int(input())
-def back(b,c,all):
+def back(b,c):
+    global tmp
     if b == c:
-        return
+        return 
     if c > 1:
         if abs(b[-1] - b[-2]) == 1:
             return
@@ -16,20 +12,19 @@ def back(b,c,all):
                 if abs(b[k] - b[l]) == abs(k - l):
                     flag = False
         if flag:
-            all.append([*b])
+            tmp += 1
             return
     else:
         for i in range(1, N + 1):
             if not used[i]:
                 used[i] = i
                 b.append(i)
-                back(b,c+1,all)
+                back(b,c+1)
                 used[i] = 0
                 b.pop()
 
-for t_case in range(T):
-    N = int(input())
-    used = [0] * (N+1)
-    all = []
-    back([],0,all)
-    print("#{} {}".format(t_case + 1, len(all)))
+N = int(input())
+used = [0] * (N+1)
+tmp = 0
+back([],0)
+print(tmp)
