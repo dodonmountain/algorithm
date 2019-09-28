@@ -1,4 +1,5 @@
 def solve(s,d):
+    global cnt
     if len(s) == m:
         print(*s)
         return
@@ -10,4 +11,6 @@ def solve(s,d):
 n, m = map(int, input().split())
 arr = list(range(1, n+1))
 used = [0] * (n+1)
+cnt = 0
 solve([],0)
+
