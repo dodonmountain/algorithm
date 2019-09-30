@@ -3,7 +3,7 @@ import sys; sys.stdin = open('5247.txt')
 from collections import deque
 
 def bfs():
-    global N, M, result, 
+    global N, M, result
     while q:
         smthing = q.pop()
         if N == M:
@@ -11,18 +11,24 @@ def bfs():
             return
         for i in range(4):
             if i == 0:
-                if somthing:
+                if 0 <= tmp < 1000001:
                     Q.append()
                     pass
-            if i == 1:
-                if somthing:
+            elif i == 1:
+                if 0 <= tmp < 1000001:
                     Q.append()
                     pass
-            if i == 2:
-                if somthing:
+            elif i == 2:
+                if 0 <= tmp < 1000001:
                     Q.append()
                     pass
-            if i == 3:
-                if somthing:
+            elif i == 3:
+                if 0 <= tmp < 1000001:
                     Q.append()
                     pass
+
+for t_case in range(int(input())):
+    N, M = map(int, input().split())
+    result = 0
+    bfs()
+    print(result)
