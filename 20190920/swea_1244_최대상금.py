@@ -29,7 +29,7 @@ T = int(input())
 
 for t_case in range(T):
     a, b = map(int, input().split())
-    if b > 2:
+    if b > len(str(a)) // 2:
         b = b // 2 + 1
     arr = list(map(int, list(str(a))))
     L = len(arr)
