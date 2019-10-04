@@ -19,6 +19,7 @@ def check():
                 if int(board[x][y]) <= mirror_board[x][y]:
                     q.append((x, y))
                     visit[x][y] = 1
+
 def wave():
     global q
     answer = 0

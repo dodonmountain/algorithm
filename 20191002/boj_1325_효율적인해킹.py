@@ -6,17 +6,19 @@ input = sys.stdin.readline
 from collections import deque
 
 def bfs(s):
-    global D
+    D = 0
     q = deque()
     q.append(s)
-    visit.add(s)
+    visit = [0] * (N + 1)
+    visit[s] = 1
     while q:
         here = q.popleft()
         D += 1
         for w in G[here]:
-            if w not in visit:
-                visit.add(w)
-                q.extend(G[w])
+            if not visit[w]:
+                visit[w] = 1
+                q.append(w)
+    return D
                 
 N, M = map(int, input().split())
 G = [[] for _ in range(N+1)]
@@ -27,10 +29,10 @@ mxd = 0
 result = []
 for i in range(1, N + 1):
     if G[i]:
-        visit = set()
-        D = 0
-        bfs(i)
-        if mxd <= D:
-            mxd = D
-            result.append((i, D))
+        tmp = bfs(i)
+        if mxd <= tmp:
+            if mxd < tmp:
+                result = []
+            mxd = tmp
+            result.append(i)
 print(*result)

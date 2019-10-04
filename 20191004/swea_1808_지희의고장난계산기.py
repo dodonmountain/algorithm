@@ -6,22 +6,23 @@ def check(num):
             return 0
         num //= 10
     return 1
+
 def my_len(num):
     cnt = 0
     while num:
         num //= 10
         cnt += 1
-    return cnt + 1
+    return cnt 
 
 def make_div(num):
     div = []
     for i in range(int(num**0.5), 1, -1):
         if num % i == 0:
-            if check(i):
-                div.append((i, my_len(i)))
             k = num // i
             if check(k):
-                div.append((k, my_len(i)))
+                div.append((k, my_len(k) + 1))
+            if check(i):
+                div.append((i, my_len(i) + 1))
     return div
 
 def back(s, d):
