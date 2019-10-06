@@ -43,6 +43,7 @@ for t_case in range(1, int(input()) + 1):
     if check(X):answer = my_len(X) + 1
     else:
         table, answer = make_div(X), 128
+        print(table)
         for i in table:
            back(i[0], i[1])
         if answer == 128:answer = -1
