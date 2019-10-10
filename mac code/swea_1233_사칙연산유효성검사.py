@@ -5,7 +5,6 @@ def trav(v):
     trav(L[v])
     trav(R[v])
 
-
 for t_case in range(10):
     N = int(input())
     O, L, R = [0] * (N+1), [0] * (N+1), [0] * (N+1)
