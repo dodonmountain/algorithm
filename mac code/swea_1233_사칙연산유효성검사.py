@@ -4,8 +4,6 @@ def trav(v):
     if v == 0:return
     trav(L[v])
     trav(R[v])
-    
-
 
 
 for t_case in range(10):
