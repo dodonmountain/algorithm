@@ -1,24 +1,19 @@
-import sys;sys.stdin = open('brick.txt')
+
 from pprint import pprint
+import sys
+sys.stdin = open('brick.txt')
 
-from collections import deque
 from copy import deepcopy
-
+from collections import deque
 def find_top(board):
     tops = []
     for i in range(W):
         for j in range(H):
             if board[j][i] != 0:
-                tops.append((i,j))
+                tops.append((i, j))
                 break
     return tops
 
-def rotate(board):
-    copy = [[0] * H for _ in range(W)]
-    for i in range(H):
-        for j in range(W):
-            copy[j][W-1-i] = board[i][j]
-    return copy
 
 def explode(position, board):
     q = deque()
@@ -29,33 +24,43 @@ def explode(position, board):
         for i in range(1, power):
             if 0 < x + i < H-1:
                 if board[x+i][y] > 1:
-                    q.append((x+i,y))
+                    q.append((x+i, y))
                 board[x+i][y] = 0
             if 0 < x - i < H-1:
                 if board[x-i][y] > 1:
-                    q.append((x-i,y))
+                    q.append((x-i, y))
                 board[x-i][y] = 0
             if 0 < y+i < W-1:
                 if board[x][y+i] > 1:
-                    q.append((x,y+i))
+                    q.append((x, y+i))
                 board[x][y+i] = 0
             if 0 < y-i < W-1:
                 if board[x][y-i] > 1:
-                    q.append((x,y-i))
+                    q.append((x, y-i))
                 board[x][y-i] = 0
     return fall(board)
 
 
 def fall(board):
-    tmp = rotate(board)
+    rt = rotate(board)
     for i in range(W):
         for j in range(H-1,-1,-1):
-            if tmp[i][j] == 0:
-                tmp[i].append(tmp[i].pop(j))
-    tmp = rotate(tmp)
-    tmp = rotate(tmp)
-    tmp = rotate(tmp)
-    return tmp
+            if rt[i][j] == 0:
+                rt[i].append(rt[i].pop(j))
+    rot = []
+    for i in range(W-1, -1, -1):
+        tmp = []
+        for j in range(H):
+            tmp.append(board[j][i])
+        rot.append(tmp)
+    return rot
+
+def rotate(board):
+    copy = [[0] * H for _ in range(W)]
+    for i in range(H):
+        for j in range(W):
+            copy[j][W-1-i] = board[i][j]
+    return copy
 
 def solve(depth, board):
     global answer
@@ -77,13 +82,10 @@ def solve(depth, board):
 
 
 T = int(input())
-T = 3
+
 for tc in range(T):
     N, W, H = map(int, input().split())
     original_board = [list(map(int, input().split())) for _ in range(H)]
     board = deepcopy(original_board)
     answer = 0x9999999
-    solve(0,board)
-    print(answer)
-    
-
+    solve(0, board)
