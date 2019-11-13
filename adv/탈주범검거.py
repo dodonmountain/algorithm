@@ -18,7 +18,6 @@ def bfs(s):
                 if board[nx][ny] != 0:
                     visit[nx][ny] = visit[x][y] + 1
                     q.append((nx,ny))
-    pprint(visit)
     cnt = 0
     for i in range(N):
         for j in range(M):

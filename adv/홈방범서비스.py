@@ -30,9 +30,9 @@ for tc in range(1, T+1):
         for j in range(N):
             if board[i][j] == 1:
                 houses.append((i, j))
-    for i in range(N):
-        for j in range(N):
-            for k in range(MaxK-1,0,-1):
+    for k in range(MaxK-1,0,-1):
+        for i in range(k//2, N-(k//2) + 1):
+            for j in range(k//2, N-(k//2) + 1):
                 tmp = getBenefit(i,j)
                 if tmp * M >= cost[k]:
                     if tmp > maxhouse:
