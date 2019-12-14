@@ -1,12 +1,7 @@
-brd = [list(range(10)) for _ in range(10)]
-W, H = 10, 10
-for i in range(W):
-    tmp = []
-    for j in range(H):
-        if brd[j][i]:
-            tmp.append(brd[j][i])
-    tmp = ([0] * (H - len(tmp))) + tmp
-    for j in range(H):
-        brd[j][i] = tmp[j]
-        
-            
+def fib(n):
+    if n == 0:
+        return 0
+    if n < 3:
+        return 1
+    return fib(n-1) + fib(n-2)
+print(fib(int(input())))
