@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>아, 어제 스킨 샀는데</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        }
+        del {
+            color: crimson;
+        }
+        .maincont {
+            width: 828px !important;
+            margin: 0 auto;
+            height: fit-content;
+            background: white;
+            padding-bottom: 4rem;
+        }
+        .chosang {
+            border: 1px solid gray;
+            border-radius: 30%;
+            font-size: 2rem;
+        }
+        .btn {
+            border: 1px solid gray;
+            margin: 0 2rem;
+        }
+        .dropdown {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .dropdown-item {
+            width: 580px;
+        }
+        .crop {
+            width: 100%;
+            height: 14rem;
+            background: royalblue;
+        }
+        .description {
+            width: 100%;
+            height: 14rem;
+        }
+        .carousel-item {
+            width: 100% !important;
+            height: 24rem;
+        }
+        .carousel-item > img {
+            height: 12rem;
+            width: 50%;
+        }
+        .carousel-caption {
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px 15px;
+        }
+        .carousel-indicators > li {
+            box-shadow: inset 5px 5px royalblue;
+        }
+        .carousel-inner {
+            height: 24rem !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container maincont shadow">
+    <div class="row">
+        <div class="col-4">
+
+            <h3 class="my-auto pt-3 text-muted">All That Sale<i class="fa fa-calendar d-inline ml-2" data-toggle="modal" data-target="#staticBackdrop"></i>
+</h3>
+        </div>
+        <div class="col-4 offset-4 my-auto pt-3">
+            <div class="input-group mb-3">
+            <i class="fas fa-user fa-2x border px-2 chosang text-muted mr-2"></i>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3"><i class="fa fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+        <iframe src="https://calendar.google.com/calendar/embed?height=850&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FSeoul&amp;src=bGtoMTUxNTE1QGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=cXQ3MG9iNzVpM2JpbGlsazJjY3NjMXBvczRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2322AA99&amp;color=%23329262&amp;color=%23336699&amp;color=%231F753C" style="border:solid 1px #777;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+    <div class="row">
+        <div class="dropdown">
+            <button class="btn btn-block dropdown-toggle text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                브랜드 별 찾기 <span class="text-light ml-2 bg-dark p-2">Missha</span> <small class="float-right text-muted">현재 3개 브랜드 세일 중</small>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Missha <span class="badge badge-danger float-right">70% ~1/22</span></a>
+                <a class="dropdown-item" href="#">Innisfree</a>
+                <a class="dropdown-item" href="#">Etude House</a>
+                <a class="dropdown-item" href="#">Dr. Jart<span class="badge badge-info float-right">30% ~1/03</span></a>
+                <a class="dropdown-item" href="#">CnP</a>
+                <a class="dropdown-item" href="#">The Face Shop <span class="badge badge-warning float-right">모든 제품 1 + 1 ~1/03</span></a>
+                <a class="dropdown-item" href="#">Apieu</a>
+                <a class="dropdown-item" href="#">이정도면됐어</a>
+            </div>
+            </div>
+        </div>
+        <hr>
+        
+    <h3 class="text-dark">| 혜<small>진님, 이런 제품 어떠세요?</small></h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-interval="false" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner w-100 shadow">
+    
+        <div class="carousel-item active mx-auto ">
+            <img src="http://gdimg.gmarket.co.kr/860480903/still/300?ver=1539564714" class="d-block w-50 mx-auto">
+            <div class="carousel-caption">
+                <h5>은율 달팽이 크림 5종 세트 75% SALE</h5>
+                <h3 class="text-dark bg-white"><del class="text-danger"><small>₩80,000</small></del> ₩20,000</h3>
+                <p>뮤신과 주름개선 성분이 함유되어 깊은 보습감과 속부터 촉촉해지는 행복함을 느끼세요</p>
+            </div>
+        </div>
+
+        <div class="carousel-item mx-auto ">
+            <img src="https://file.beautynet.co.kr/updata2/upload/goods/21/83521/resize/[%EB%AF%B8%EC%83%A4]-%ED%8F%AC%EB%A7%A8-%EC%95%84%EC%BF%A0%EC%95%84%EB%B8%8C%EB%A0%88%EC%8A%A4-2%EC%A2%85-%EC%84%B8%ED%8A%B8_300X300_83521_20190522172533096.jpg" class="d-block w-50 mx-auto">
+            <div class="carousel-caption">
+                <h5>포맨 아쿠아브레스 2종 세트 100% SALE</h5>
+                <h3 class="text-dark bg-white"><del class="text-danger"><small>₩200,000</small></del> ₩0</h3>
+                <p>가성비가 정말 좋은 제품 횐님들께 추천드려요</p>
+            </div>
+        </div>
+
+        <div class="carousel-item mx-auto ">
+            <img src="https://file.beautynet.co.kr/updata2/upload/goods/34/79634/creamessence_79634_20180608174026447.jpg" class="d-block w-50 mx-auto">
+            <div class="carousel-caption">
+                <h5>무언가 99% SALE</h5>
+                <h3 class="text-dark bg-white"><del class="text-danger"><small>₩1,000,000</small></del> ₩10,000</h3>
+                <p>아낌없이 세일합니다</p>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<hr>
+<h2 class="float-left text-muted display-3">MISSHA</h2>
+
+
+<h2 class="p-5"><span class="badge badge-info float-right ml-2">D-5</span><span class="badge badge-danger float-right">70%</span> </h2>
+    <div class="row px-3 pt-2">
+        <div class="col-4">
+            <image class="crop shadow" src="https://file.beautynet.co.kr/updata2/upload/goods/57/79157/resize/500_300X300_79157_20191122165510409.jpg">
+        </div>
+        <div class="col-8 bg-white shadow">
+            <div class="description">
+                <span class="float-right">2019.12.27 기준</span>
+                <p>#. 1</p>
+                <h5 class="py-auto">[빅세일] [미샤] 비폴렌 리뉴 앰풀러 40ml</h5>
+                <h4 class="bg-light text-center"> <del>28,000원</del> 14,000원 (50%off)</h4>
+                <span class="badge badge-pill badge-info">배송비 무료</span>
+                <span class="badge badge-pill badge-success">포인트: CJ 522p</span>
+                <span class="badge badge-pill badge-success">용량: 40ml</span>
+                <div class="row mt-3 justify-content-end">
+                    <button class="btn btn-warning m-1">가까운 판매 매장</button>
+                    <button class="btn btn-outline-primary m-1">P.계산기</button>
+                    <button class="btn btn-outline-dark m-1">솔직구매후기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--2-->
+    <div class="row px-3 pt-2">
+        <div class="col-4">
+            <image class="crop shadow" src="https://file.beautynet.co.kr/updata2/upload/goods/26/80826/resize/I2265_300X300_80826_20190910131121983.jpg">
+        </div>
+        <div class="col-8 bg-white shadow">
+            <div class="description">
+                <span class="float-right">2019.12.27 기준</span>
+                <p>#. 2</p>
+                <h5 class="py-auto">[빅세일] [미샤] 타임 레볼루션 나이트 리페어 2종 기획세트</h5>
+                <h4 class="bg-light text-center"> <del>81,000원</del>  40,500원 (50%off)</h4>
+                <span class="badge badge-pill badge-info">배송비 무료</span>
+                <span class="badge badge-pill badge-success">포인트: BM(미샤) 0p</span>
+                <span class="badge badge-pill badge-success">용량: 50ml + 앰플 50ml</span>
+                <div class="row mt-3 justify-content-end">
+                    <button class="btn btn-warning m-1">가까운 판매 매장</button>
+                    <button class="btn btn-outline-primary m-1">P.계산기</button>
+                    <button class="btn btn-outline-dark m-1">솔직구매후기</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!--3-->
+    <div class="row px-3 pt-2">
+        <div class="col-4">
+            <image class="crop shadow" src="https://file.beautynet.co.kr/updata2/upload/goods/24/80824/resize/%ED%83%80%EC%9E%84%EB%A0%88%EB%B3%BC%EB%A3%A8%EC%85%98%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A6%AC%ED%8E%98%EC%96%B4%ED%94%84%EB%A1%9C%EB%B0%94%EC%9D%B4%EC%98%A4%EB%B3%B4%EB%9E%8F%EB%B9%9B%EC%95%B0%ED%94%8C_80824_20190430175851424_300X300_80824_20191227092057024.jpg">
+        </div>
+        <div class="col-8 bg-white shadow">
+            <div class="description">
+                <span class="float-right">2019.12.27 기준</span>
+                <p>#. 3</p>
+                <h5 class="py-auto">[빅세일] [미샤] 타임레볼루션나이트리페어 프로바이오 보랏빛 앰플</h5>
+                <h4 class="bg-light text-center"> <del>39,000원</del>  19,500원 (50%off)</h4>
+                <span class="badge badge-pill badge-success">배송비 무료</span>
+                <span class="badge badge-pill badge-success">포인트: BM 0p</span>
+                <span class="badge badge-pill badge-success">용량: 50ml</span>
+                <span class="badge badge-pill badge-danger">첫 결제: 5000원</span>
+                <span class="badge badge-pill badge-danger">재구매: 15%</span>
+                <div class="row mt-3 justify-content-end">
+                    <button class="btn btn-warning m-1">가까운 판매 매장</button>
+                    <button class="btn btn-outline-primary m-1">P.계산기</button>
+                    <button class="btn btn-outline-dark m-1">솔직구매후기</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!--4-->
+    <div class="row px-3 pt-2">
+        <div class="col-4">
+            <image class="crop shadow" src="https://file.beautynet.co.kr/updata2/upload/goods/63/73063/resize/[%EB%AF%B8%EC%83%A4]-%EB%AF%B8%EC%82%AC-%EC%B4%88%EA%B3%B5%EC%A7%84-3%EC%A2%85-%EC%84%B8%ED%8A%B8_300X300_73063_20190522172153415.jpg">
+        </div>
+        <div class="col-8 bg-white shadow">
+            <div class="description">
+                <span class="float-right">2019.12.27 기준</span>
+                <p>#. 4</p>
+                <h5 class="py-auto">[빅세일] [미샤] 타임 레볼루션 더 퍼스트 트리트먼트 에센스 RX 150ml</h5>
+                <h4 class="bg-light text-center"> <del>39,000원</del>  19,500원 (50%off)</h4>
+                <span class="badge badge-pill badge-success">포인트: CJ 1p</span>
+                <span class="badge badge-pill badge-success">용량: 150ml</span>
+                <span class="badge badge-pill badge-danger">신한카드: 15%</span>
+                <div class="row mt-3 justify-content-end">
+                    <button class="btn btn-warning m-1">가까운 판매 매장</button>
+                    <button class="btn btn-outline-primary m-1">P.계산기</button>
+                    <button class="btn btn-outline-dark m-1">솔직구매후기</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+<nav aria-label="...">
+  <ul class="pagination pagination-lg mx-auto my-2 justify-content-center">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        1
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+
+
+
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
