@@ -19,3 +19,4 @@ for tc in range(T):
                 cnt += 1
         answer += cnt
     print(answer)
+
