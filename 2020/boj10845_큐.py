@@ -1,11 +1,13 @@
-from collections import deque
 import sys;sys.stdin = open('boj10845.txt')
 
-
-N = int(input())
+from collections import deque
+import sys
+input = sys.stdin.readlines
+rawinput = input()
+N = int(rawinput[0])
 q = deque()
-for i in range(N):
-    com = input()
+for i in range(1, N + 1):
+    com = rawinput[i].rstrip('\n')
     try:
         com, num = com.split()
     except:
@@ -13,9 +15,9 @@ for i in range(N):
     if com == 'push':
         q.append(num)
     elif com == "pop":
-        try:
+        if q:
             print(q.popleft())
-        except:
+        else:
             print(-1)
     elif com == "size":
         print(len(q))
@@ -25,12 +27,12 @@ for i in range(N):
         else:
             print(1)
     elif com == "front":
-        try:
+        if q:
             print(q[0])
-        except:
+        else:
             print(-1)
     elif com == "back":
-        try:
+        if q:
             print(q[-1])
-        except:
+        else:
             print(-1)
